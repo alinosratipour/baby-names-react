@@ -9,16 +9,16 @@ return(
 
 <div className="container">
 <ul className="grid">
-{props.names.sort((a, b) => a.name.localeCompare(b.name)).map(item =>{
+{props.names.sort((a, b) => a.name.localeCompare(b.name)).map((item,index) =>{
     const {name,sex} = item;
 {if(sex=== "f"){
 return(
 
-<li className="girl">{name}</li>
+<li key={index} className="girl">{name}</li>
 
  );
 } else if(sex === "m"){
- return <li className="boy">{name}</li>  
+ return <li key={index} className="boy">{name}</li>  
 }
 
 
