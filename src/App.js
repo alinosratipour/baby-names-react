@@ -1,12 +1,16 @@
 
 import './App.css';
-import BabyNames from "./BabyNames";
-import babyName from "./babyNamesData.json";
+import BabyNames from "./Components/BabyNames";
+import babyName from "./data/babyNamesData.json";
+import React from "react";
 
 function App() {
   return (
     <div className="App">
-      <BabyNames  names={babyName}/>
+  
+      <div className="mainWrapper">
+         <BabyNames  babyNames={babyName} />     
+      </div>  
     </div>
   );
 }
