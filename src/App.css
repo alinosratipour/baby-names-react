@@ -36,6 +36,8 @@ list-style: none;
   cursor: pointer;
 }
 
+
+
 .grid{
 width:55%;
 display: flex;
@@ -70,6 +72,8 @@ flex-direction: column;
 padding: 20px;
 border-radius: 10px;
 width: 40%;
+border:none;
+outline:none;
 
 }
 
@@ -101,4 +105,28 @@ color: rgb(204, 193, 193);
  
   text-align: left;
   padding-left: 40px;
+}
+
+.boy-gender{
+  width:10%;
+  cursor:pointer;
+ 
+}
+.boy-gender:hover {
+  background-color: #666;
+  color: white;
+}
+
+.icon{
+  width:80px;
+  height:80px;
+}
+.btn-icon-wrapper{
+  display:flex;
+  background:red;
+}
+
+.small-logo{
+  width:40px;
+  height:40px;
 }
